@@ -1,0 +1,17 @@
+<div class="page">
+  <div class="portfolio">
+    <div class="title">
+      <h1>Portfolio</h1>
+      <h2>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus hasellus ultrices nulla quis nibh. Quisque a lectus.</h2>
+    </div>
+    <div class="row">
+      <div class="col-sm-4" *ngFor="let work of workData">
+        <div class="content"> <img src="{{base_url+work.image}}" class="image-set"/>
+          <p><span>{{work.title}}</span></p>
+          <p>{{work.description}}</p>
+          <a href="#">visit site</a> </div>
+      </div>
+
+    </div>
+  </div>
+</div>

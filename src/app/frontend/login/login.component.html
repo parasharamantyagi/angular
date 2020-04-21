@@ -1,0 +1,42 @@
+<div class="page mar-top30">
+
+  <div class="content mar-top30">
+    <h1>Login</h1>
+    <form [formGroup]="blogForm" (ngSubmit)="onSubmit()">
+      <div class="contact-form">
+        <label> <span>Email or username</span></label>
+        <input type="text" class="input_text" formControlName="email" name="email" id="email"/>
+        <div *ngIf="submitted && fBlog.email.errors && fBlog.email.errors.required" class="text-danger">Email is required.</div>
+        <label> <span>Password</span></label>
+        <input type="password" class="input_text" formControlName="password" name="password" id="password"/>
+        <div *ngIf="submitted && fBlog.password.errors && fBlog.password.errors.required" class="text-danger">password is required.</div>
+        <input type="submit" class="button btn btn-primary" value=" Sign in " />
+      </div>
+    </form>
+    <div class="address mar-bottom30">
+      <div class="panel">
+        <div class="title">
+          <h1>Address - 01</h1>
+        </div>
+        <div class="content">
+          <p>Block No:5, Some where Road,<br />
+            City name, State, Country name</p>
+          <p class="padTop"><span>Phone :</span> 000 888 88888</p>
+          <p><span>Email :</span> <a href="mailto:info@companyname.com">info@companyname.com</a></p>
+        </div>
+      </div>
+      <div class="clearing"></div>
+      <div class="panel marginTop">
+        <div class="title">
+          <h1>Address - 02</h1>
+        </div>
+        <div class="content">
+          <p>Block No:5, Some where Road,<br />
+            City name, State, Country name</p>
+          <p class="padTop"><span>Phone :</span> 000 888 88888</p>
+          <p><span>Email :</span> <a href="mailto:info@companyname.com">info@companyname.com</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
